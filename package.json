@@ -1,0 +1,53 @@
+{
+  "name": "ts-utilbelt",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "description": "Utility functions with modern syntax and awesome TS support - implementations for ts-toolbelt",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "test": "ava",
+    "rollup": "rollup -c build/rollup.js",
+    "build": "npm run lint && npm run lint && npm run test && npm run rollup"
+  },
+  "author": "Luca Ban - Mesqueeb",
+  "license": "MIT",
+  "homepage": "https://github.com/mesqueeb/ts-utilbelt#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "ava": "^3.10.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-tree-shaking": "^1.8.0",
+    "rollup": "^1.32.1",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "tsconfig-paths": "^3.9.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "bugs": {
+    "url": "https://github.com/mesqueeb/ts-utilbelt/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesqueeb/ts-utilbelt.git"
+  },
+  "ava": {
+    "extensions": ["ts"],
+    "require": ["tsconfig-paths/register", "ts-node/register"]
+  },
+  "keywords": [
+    "typescript",
+    "ts-toolbelt",
+    "ts-utils",
+    "ts-utilities",
+    "typescript-utils",
+    "typescript-utilities",
+    "utilities",
+    "utils"
+  ]
+}
