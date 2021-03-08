@@ -5,7 +5,7 @@
   "description": "Utility functions with modern syntax and awesome TS support - implementations for ts-toolbelt",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "typings": "types/index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "test": "ava",
